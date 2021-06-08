@@ -1,4 +1,4 @@
-﻿namespace hw1
+﻿namespace hw4
 {
     // Lamport Clock implementation 
     public class Clock

@@ -5,7 +5,7 @@ using Akka.Event;
 using Akka.Cluster;
 using System;
 
-namespace hw1
+namespace hw4
 {
     public class ProcessActor : UntypedActor
     {

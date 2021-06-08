@@ -7,7 +7,7 @@
 #	host = "0.0.0.0"
 #
 #	# default port number used to listen for incoming petabridge.cmd client connections
-#	port = 9112
+#	port = 9110
 #}
 
 akka {
@@ -26,15 +26,15 @@ akka {
       # ^^ The Akka.NET docs claim this, but what actually happens it it gets replaced by 0.0.0.0
       public-hostname = "BADHOST"
       hostname = "0.0.0.0"
-      port = 4056
+      port = 4053
     }
   }            
 
   cluster {
     #will inject this node as a self-seed node at run-time
     # Kubernetes service
-    seed-nodes = ["akka.tcp://hw4@hw1-0.hw1.default.svc.cluster.local:4056", "akka.tcp://hw4@hw1-1.hw1.default.svc.cluster.local:4056"]
+    seed-nodes = ["akka.tcp://hw4@hw4-0.hw4.default.svc.cluster.local:4053", "akka.tcp://hw4@hw4-1.hw4.default.svc.cluster.local:4053"]
     # Docker private network
-    # seed-nodes = ["akka.tcp://hw4@hw1-0:4056", "akka.tcp://hw4@hw1-1:4056"] 
+    # seed-nodes = ["akka.tcp://hw4@hw4-0:4053", "akka.tcp://hw4@hw4-1:4053"] 
   }
 }
