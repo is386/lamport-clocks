@@ -35,9 +35,9 @@ spec:
       containers:
         - name: hw4
           #image: gcr.io/cs647-240119/hw4:v1
-          image: hw4:latest
+          image: is386/hw4:latest
           # Use Never for local minikube, Always for gcr.io
-          imagePullPolicy: Never #Always #Never
+          imagePullPolicy: Always #Never
           ports:
             - containerPort: 4053
               name: akka-net
