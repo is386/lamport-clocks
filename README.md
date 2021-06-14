@@ -4,9 +4,9 @@ This is a program written in C# that implements Lamport Clocks using Akka Actors
 
 ## Usage
 
-`./start` will build the project, build the Docker image, and then run it using Minikube.
+`sh start.sh` will build the project, build the Docker image, and then run it using Minikube.
 
-`./delete` will delete the service, pods, and statefulset.
+`sh delete.sh` will delete the service, pods, and statefulset.
 
 ## Dependencies
 
