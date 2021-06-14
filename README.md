@@ -1,7 +1,13 @@
-# Homework 4 CS647
+# Lamport Clocks and Kubernetes
 
-## Indervir Singh (is386)
+This is a program written in C# that implements Lamport Clocks using Akka Actors. Once I completed the implementation, I also used Akka's Cluster API to run this on Kubernetes.
 
-I decided to implement homework 1 with clusters. I could not get it to work for more than 2 actors, so it only runs with 2 replicas. However, it works well overall on kubernetes, and the two actors communicate just fine.
+## Usage
 
-I've included `start.sh` which builds the docker image, and starts the program with `minikube`. `delete.sh` will do a shutdown of the service and pods.
+`./start` will build the project, build the Docker image, and then run it using Minikube.
+
+`./delete` will delete the service, pods, and statefulset.
+
+## Dependencies
+
+- You will need `docker` and `minikube` to run this project.
