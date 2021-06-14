@@ -10,4 +10,6 @@ This is a program written in C# that implements Lamport Clocks using Akka Actors
 
 ## Dependencies
 
+- `dotnet 5.0+`
+
 - You will need `docker` and `minikube` to run this project.
